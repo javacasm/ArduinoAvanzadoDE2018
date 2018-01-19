@@ -1,11 +1,34 @@
-# Arduino Avanzado DE 2018
+# Arduino  2018
+
+# Semana 1
+
+##  Introducción: Qué es Arduino
+ * Ejemplos de proyectos con Arduino
+ * ¿y si no tengo Arduino?: emuladores
+ * Apéndice: Hardware libre
+
+## Hardware
+ * Características de Arduino
+ * Modelos de Arduino
+ * Apéndice:Introducción a la electrónica
+
+# Semana 2
+
+## Programación
+ * Programación con bloques
+ * Programación con código
+   * Instalación del entorno
+ * Librerías
+
+## Controlando el mundo físico
+ * Entradas y salidas digitales
+ * Entradas y salidas analógicas
+ * Sensores
+ * Motores
+ * Apéndice: cuidados básicos de electrónica
 
 
-## Introducción
-* Repaso de programación Arduino
-* Repaso de hardware
-* Repaso de electrónica
-* Presentación del kit
+# Semana 3
 
 ## Programación avanzada
 * Acceso avanzado a puertos: acceso paralelo
@@ -22,7 +45,9 @@
   * Tipos de sensores
   * Medidas y procesamiento
 
-## Expandiendo Arduino 12h
+# Semana 4
+
+## Expandiendo Arduino
 * ADC
 * DAC
 * Interrupciones hardware
@@ -33,6 +58,8 @@
 * Control de motores
   * Motores CC
   * Paso a paso
+
+# Semana 5
 
 ## Comunicaciones
 * Control con Infrarrojos
