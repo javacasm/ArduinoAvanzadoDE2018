@@ -1,5 +1,5 @@
 
-all: 1 2 3 4 5 6 7
+all: 1 2 3 4 5 6 7 8 9 10
 
 S1="Tema 1 - Introducción a Arduino.md"
 F1="Tema 1 - Introducción a Arduino.docx"
@@ -14,6 +14,10 @@ S6="Tema 6 - Uso de pantallas.md"
 F6="Tema 6 - Uso de pantallas.docx"
 S7="Tema 7 - Lectura de sensores.md"
 F7="Tema 7 - Lectura de sensores.docx"
+F8="Tema 8 - Ampliando Arduino.docx"
+S9="Tema 9 - Control de potencia.md"
+F9="Tema 9 - Control de potencia y motores.docx"
+F10="Tema 10 - Comunicaciones.docx"
 
 
 1:
@@ -76,13 +80,40 @@ F7="Tema 7 - Lectura de sensores.docx"
 					T7_electronica.md \
 					$(S7)
 
+8:
+	pandoc --latex-engine=xelatex       \
+					-V papersize:a4paper        \
+					--template=./LaTeX_ES.latex \
+					-o $(F8) \
+					Cabecera.md           \
+					T8_ADC.md \
+					T8_DAC.md \
+					T8_Interrupciones_Hardware.md
 
+9:
+	pandoc --latex-engine=xelatex       \
+					-V papersize:a4paper        \
+					--template=./LaTeX_ES.latex \
+					-o $(F9) \
+					Cabecera.md           \
+					$(S9) \
+					T9_motores.md
+
+10:
+	pandoc --latex-engine=xelatex       \
+					-V papersize:a4paper        \
+					--template=./LaTeX_ES.latex \
+					-o $(F10) \
+					Cabecera.md           \
+					T10_comunicaciones.md \
+					T10_comunicaciones_radio.md \
+					T10_infrarrojos.md
 
 clean:
-	rm $(F1) $(F2) $(F3) $(F4) $(F5) $(F6) $(F7)
+	rm $(F1) $(F2) $(F3) $(F4) $(F5) $(F6) $(F7) $(F8) $(F9)
 
 cp:
-	cp $(F1) $(F2) $(F3) $(F4) $(F5) $(F6) $(F7) /home/javacasm/Dropbox/1_proyectos/javacasm-DarwinEventur/2018/01_arduino_completo_online/materiales/
+	cp $(F1) $(F2) $(F3) $(F4) $(F5) $(F6) $(F7) $(F8) $(F9) /home/javacasm/Dropbox/1_proyectos/javacasm-DarwinEventur/2018/01_arduino_completo_online/materiales/
 
 push:
 	git commit -m "update" $(S1);
@@ -91,4 +122,7 @@ push:
 	git commit -m "update" $(S4);
 	git commit -m "update" T5_*.md;
 	git commit -m "update" $(S6);
+	git commit -m "update" $(S7) T7_*.md;
+	git commit -m "update" T8_*.md;
+	git commit -m "update" $(S9) T9_*.md;
 	git push;
