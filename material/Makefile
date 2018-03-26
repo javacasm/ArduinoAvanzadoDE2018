@@ -106,8 +106,9 @@ F10="Tema 10 - Comunicaciones.docx"
 					-o $(F10) \
 					Cabecera.md           \
 					T10_comunicaciones.md \
+					T10_wifi.md \
 					T10_comunicaciones_radio.md \
-					T10_infrarrojos.md
+					T10_Infrarrojos.md
 
 clean:
 	rm $(F1) $(F2) $(F3) $(F4) $(F5) $(F6) $(F7) $(F8) $(F9)
