@@ -39,3 +39,8 @@
 |Electrónica analógica|https://youtu.be/FD6N9x6bjHU
 |Electrónica de potencia|https://youtu.be/8xaS2t1M5R4
 |ATTiny|https://www.youtube.com/embed/jcdygV1MhyU
+|Configuracion de bluetooth|https://youtu.be/N04DzxnTXqA
+|Control de rele por bluetooth|https://youtu.be/j5j-pfIGdoM
+|Conexion serie|https://youtu.be/A6BH4cfqS4k
+|Ethernet|https://youtu.be/s8D1DZWbubg
+|Placas ethernet|https://youtu.be/6W_2I--XwrY
