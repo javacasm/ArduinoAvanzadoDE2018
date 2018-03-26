@@ -19,7 +19,7 @@ Los montajes eléctricos son muy sencillos. Para el emisor:
 
 Y el montaje para el receptor (hay que ver el patillaje concreto de nuestro modelo)
 
-![Montaje_Receptor_IR.png](./)
+![Montaje_Receptor_IR.png](./images/Montaje_Receptor_IR.png)
 
 
 
