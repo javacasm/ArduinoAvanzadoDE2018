@@ -1,25 +1,7 @@
-## [Repaso de programación](./T5_Programacion_C++.md)
-### [Practicas de programación](./T5_practicas_programacion.md)
-## [Medida de tiempos](T5_tiempos.md)
-### Parpadeo sin delay
-### [Proceso de compilacion](./T5_ProcesoCompilacion.md)
+# Tema 5 - Programación avanzada
 
-## [Interrupciones](./T5_Interrupciones.md)
+En este tema vamos a empezar con un repaso sobre la programación con Arduino (y con todo lo relacionado con C y C++) y también aprenderemos cómo es el proceso de compilación.
 
-## Interrupciones software
+A continuación veremos como medir tiempos lo que nos permitirá hacer programas sin esperas (delay)
 
-
-Acceso a avanzado a puertos
-  acceso paralelo
-  utilidad
-  registros
-  velocidad de acceso
-|Acceso a los pines con registros|https://www.youtube.com/embed/xkSOt-tlCmM
-## TODO
-
-### Division de un proyecto en ficheros
-
-
-
-
-### Clases y objetos
+Veremos el concepto de interrupción y cómo utilizar las interrupciones de tipo software (por tiempo). Terminaremos viendo cómo utilizar los puertos de arduino de un modo avanzado (Registrosº).
