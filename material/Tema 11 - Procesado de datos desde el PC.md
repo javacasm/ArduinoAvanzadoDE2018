@@ -126,6 +126,10 @@ Instalando la librería matemática MathPlotLib podemos representar datos gráfi
 
 El código https://github.com/gregpinero/ArduinoPlot/tree/master  implementa un monitor  https://github.com/gregpinero/ArduinoPlot/blob/master/Arduino_Monitor.py de arduino que permanentemente está recibiendo datos de Arduino via puerto serie (por defecto por el COM4 y a 9600 pero facilmente modificable) y código https://github.com/gregpinero/ArduinoPlot/blob/master/wx_mpl_dynamic_graph.py para ir visualizando los datos a medida que estos llegan
 
+### Referencias
+
+Podéis aprender mucho más sobre cómo usar Arduino y python en estos tutoriales [Tutorial de python y arduino](http://www.toptechboy.com/using-python-with-arduino-lessons/)
+
 
 ## Java
 
@@ -190,5 +194,5 @@ Siguiendo las indicaciones de este enlace http://panamahitek.com/2013/09/22/graf
 ![javaChart.png](./images/javaChart.png)
 
 Para realizar los gráficos se usa la conocida librería abierta JFreeChart http://www.jfree.org/jfreechart/
- 
+
 Para utilizarla en nuestro proyecto descargamos JFreeCharts y jCommons http://www.jfree.org/jcommon/ e importamos en nuestro proyecto
