@@ -53,7 +53,7 @@
 * Interrupciones hardware
 
 
-## Control de potencia y wifi
+## Control de potencia
 * Control de potencia usando Reles
 * Control de motores
   * Motores CC
@@ -68,6 +68,7 @@
 * Wifi
 * Lectura de tarjertas RFID
 
-## Procesado de datos desde el PC 3h
+## Procesado de datos desde el PC
+* Ethernet
 * Python
 * java
