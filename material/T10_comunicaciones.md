@@ -1,35 +1,4 @@
 
-## Comunicaciones Serie
-
-El protocolo de comunicaciones más sencillo es que ya hemos usado: el protocolo serie.
-
-La forma natural de comunicarse con Arduino es utilizando el puerto serie, siendo este el método de depuración más usado.
-
-En el [siguiente vídeo](https://youtu.be/A6BH4cfqS4k) veremos detalles sobre este protocolo, cómo usarlo en Arduino y cómo leer datos desde Arduino.
-
-Actualización: en el vídeo no aparecen los métodos readString y readStringUntil, muy útiles de la librería Serial. Nos facilitan enormemente el recuperar cadena desde el puerto serie.
-
-Os dejo una presentación donde se trata en más detalle "Tema 10 - Comunicaciones serie.pdf"
-
-
-## Comunicaciones bluetooth
-
-Una vez podemos comunicarnos vía puerto serie el pasar a comunicaciones inalámbricas es  sencillo con bluetooth.
-
-Existen unos dispositivos capaces de enviar al dispositivo con el que están emparejados los datos que ellos reciben por sus pines.
-
-En esta imagen podemos ver uno de ellos. Bajo este aspecto existen diferentes tipos de dispositivos. 
-Para hacer lo que pretendemos basta la versión más básica, que será un bluetooth de tipo esclavo (los master pueden costar hasta 4 veces más)
-
-La conexión con Arduino es muy sencilla (sólo hay que tener en cuenta que hay que conectar con los cables cruzados: TX-RX y RX-TX)
-
-
-![Conexion](http://www.naylampmechatronics.com/img/cms/Blog/Tutorial%20Bluetooth/Tutorial%20HC-06%201.jpg)
-
-En [este vídeo](https://youtu.be/N04DzxnTXqA) vemos cómo utilizarlos y configurarlos
-
-
-En el [siguiente vídeo](https://youtu.be/j5j-pfIGdoM) vamos a usar un dispositivo bluetooth para activar un rele remotamente desde un móvil
 
 ## Procotocolos de comunicaciones
 
