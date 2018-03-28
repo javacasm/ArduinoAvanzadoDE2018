@@ -9,8 +9,8 @@ S3="Tema 3 - Programación de  Arduino.md"
 F3="Tema 3 - Programación de  Arduino.docx"
 S4="Tema 4 - Controlando el mundo físico con Arduino.md"
 F4="Tema 4 - Controlando el mundo físico con Arduino.docx"
-S5="Tema 5 - Programacion avanzada.md"
-F5="Tema 5 - Programacion avanzada.docx"
+S5="Tema 5 - Programacion Avanzada.md"
+F5="Tema 5 - Programación a	vanzada.docx"
 S6="Tema 6 - Uso de pantallas.md"
 F6="Tema 6 - Uso de pantallas.docx"
 S7="Tema 7 - Lectura de sensores.md"
@@ -112,10 +112,17 @@ F11="Tema 11 - Procesado de datos desde el PC.docx"
 					-o $(F10) \
 					Cabecera.md           \
 					$(S10) \
+					T10_Serie.md \
+					T10_Bluetooth.md \
+					T10_Infrarrojos.md \
 					T10_comunicaciones.md \
 					T10_wifi.md \
+					T10_esp8266.md \
 					T10_comunicaciones_radio.md \
-					T10_Infrarrojos.md
+					T10_rfids.md \
+					T10_gps.md \
+					T10_RTCs.md
+
 
 11:
 	pandoc --latex-engine=xelatex       \
