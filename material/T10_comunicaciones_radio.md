@@ -12,10 +12,7 @@ En [este vídeo](https://www.youtube.com/embed/_uRbiYx_nPQ) vamos a ver algunas 
 
 Veamos ahora cómo usarlos, con librerías y conexiones en [este vídeo](https://www.youtube.com/embed/QKExgg_kUtM)
 
-
-
 Existen otras librerías con mayor funcionalidad, capaces de controlar los dispositivos Nordic. Las vemos en [este vídeo](https://www.youtube.com/embed/3lMUoepgeQg)
-
 
 Si tuviéramos que elegir un sistema de comunicaciones inalámbricas sería sin duda el NRF: es un todo-terreno que podría sustituir a cualquier 485. Además nos evita el cableado que es un infierno en obra ya terminada.
 
