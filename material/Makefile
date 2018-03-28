@@ -119,10 +119,7 @@ F11="Tema 11 - Procesado de datos desde el PC.docx"
 					T10_wifi.md \
 					T10_esp8266.md \
 					T10_comunicaciones_radio.md \
-					T10_rfids.md \
-					T10_gps.md \
-					T10_RTCs.md
-
+					T10_gps.md
 
 11:
 	pandoc --latex-engine=xelatex       \
