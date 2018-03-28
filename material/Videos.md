@@ -44,3 +44,6 @@
 |Conexion serie|https://youtu.be/A6BH4cfqS4k
 |Ethernet|https://youtu.be/s8D1DZWbubg
 |Placas ethernet|https://youtu.be/6W_2I--XwrY
+|Arduino yun I|https://youtu.be/i5Pzz_ENyag
+|Arduino yun II|https://youtu.be/UeSwu1LSrac
+|Arduino UNO Wifi|https://youtu.be/Mp81ekoXV4Y
