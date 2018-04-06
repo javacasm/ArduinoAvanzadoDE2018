@@ -49,7 +49,11 @@ Una vez instalada tendremos ejemplos para hacer todas las funciónes disponibles
 * Ejemplo ReadAndWrite: lee la información y cambia el bloque 4 escribiendo 0, 1,2, ... 15 en él
 
   ![RFID_Escritura.png](./images/RFID_Escritura.png)
-  
+
+
+En [este vídeo](https://youtu.be/suunQECfMM8) hablamos de RFIDs.
+
+
 ### Referencias
 
 [Tutorial de Luis Llamas](https://www.luisllamas.es/arduino-rfid-mifare-rc522/)
