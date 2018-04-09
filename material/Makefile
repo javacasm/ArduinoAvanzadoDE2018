@@ -53,7 +53,9 @@ F11="Tema 11 - Procesado de datos desde el PC.docx"
 					--template=./LaTeX_ES.latex \
 					-o $(F4) \
 					Cabecera.md           \
-					$(S4)
+					$(S4) \
+					T4_sensores.md
+
 
 5:
 	pandoc --latex-engine=xelatex       \
@@ -140,7 +142,7 @@ push:
 	git commit -m "update" $(S1);
 	git commit -m "update" $(S2);
 	git commit -m "update" $(S3);
-	git commit -m "update" $(S4);
+	git commit -m "update" $(S4) T4_sensores.md;
 	git commit -m "update" $(S5) T5_*.md;
 	git commit -m "update" $(S6);
 	git commit -m "update" $(S7) T7_*.md;
