@@ -1,3 +1,5 @@
+### Apéndice sensores
+
 Existen multitud de sensores, y muchos de ellos miden magnitudes semejantes. Por ejemplo para medir la inclinación podemos unsar des un simple [Tilt Sensor](http://arduino.cc/es/Tutorial/TiltSensor)  (una bolita que al inclinar el encapsulado hace contacto entre 2 terminales) hasta un avanzado  acelerómetro. Dentro de este último tipo podemos ver varios modelos distintos, cada uno con distinta forma de acceder a sus datos:
 * Uno de los más utilizados es el ADXL, podemos ver en el Playground de Arduino, [cómo  usarlo](http://arduino.cc/en/Tutorial/ADXL3xx)
 * Otro muy famoso (y de los primeros en integrarse en un único chip) es el memsic. que se usa midiendo la longitud de los pulsos de sus señales en cada salida. En este [enlace](http://arduino.cc/en/Tutorial/Memsic2125) se puede ver un ejemplo de código.
