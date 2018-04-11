@@ -85,38 +85,38 @@ El programa  python en caso de recibir ese mensaje enviará el email con el asu
 
 El código python del ejemplo sería el siguiente:
 
-import serial
-import time
-import smtplib
+    import serial
+    import time
+    import smtplib
 
-USUARIO_GMAIL = 'micorreo@gmail.com'
-CONTRASENA_GMAIL = 'micontraseña'
-DESTINATARIO = 'destinatario@dominio.com'
-REMITENTE = 'micorreo@gmail.com'
-ASUNTO = ' ¡ Hay un intruso en su hogar. ! '
-MENSAJE = ' ¡ Su sensor de seguridad ha detectado movimiento en su casa. ! '
-arduino = serial.Serial('COM4', 9600, timeout = 3.0) #El puerto se abre inmediatamente en la creación de objetos, cuando se da un puerto.
-while True:
-  lineaLeida = arduino.readline() #Guardo una línea leída desde el puerto serial
-  print(lineaLeida) #Imprime la variable mensaje
-  if lineaLeida[0] == 'H' : #Si la línea contiene a 'H' envía un correo electrónico
-    enviar_correo_electronico() #Envío un correo electrónico
-    time.sleep(0.5) #Suspende la ejecución por 0.5 segundos
+    USUARIO_GMAIL = 'micorreo@gmail.com'
+    CONTRASENA_GMAIL = 'micontraseña'
+    DESTINATARIO = 'destinatario@dominio.com'
+    REMITENTE = 'micorreo@gmail.com'
+    ASUNTO = ' ¡ Hay un intruso en su hogar. ! '
+    MENSAJE = ' ¡ Su sensor de seguridad ha detectado movimiento en su casa. ! '
+    arduino = serial.Serial('COM4', 9600, timeout = 3.0) #El puerto se abre inmediatamente en la creación de objetos, cuando se da un puerto.
+    while True:
+      lineaLeida = arduino.readline() #Guardo una línea leída desde el puerto serial
+      print(lineaLeida) #Imprime la variable mensaje
+      if lineaLeida[0] == 'H' : #Si la línea contiene a 'H' envía un correo electrónico
+        enviar_correo_electronico() #Envío un correo electrónico
+        time.sleep(0.5) #Suspende la ejecución por 0.5 segundos
 
-def enviar_correo_electronico():
-  print("Envíando e-mail")
-  smtpserver = smtplib.SMTP("smtp.gmail.com",587) #Definimos el objeto 'smtpserver' con smptlib.SMTP, SMTP("",) Administra la conexión SMTP
-  smtpserver.ehlo() #Este método prepara envíar un correo electrónico
-  smtpserver.starttls() #Pone la conexión con el servidor SMTP en el modo de TLS.
-  smtpserver.ehlo()
-  smtpserver.login(USUARIO_GMAIL, CONTRASENA_GMAIL) #Iniciamos sesion en el SMTP server de Google
-  header = 'To: ' + DESTINATARIO + '\n' #Construimos el 'HEADER' para envíar el correo electrónico
-  header += 'From: ' + REMITENTE + '\n'
-  header += 'Subject: ' + ASUNTO + '\n'
-  print header
-  msg = header + '\n' + MENSAJE + ' \n\n' #Concatenamos el'HEADER' y el 'MENSAJE' del correo electrónico
-  smtpserver.sendmail(REMITENTE, DESTINATARIO, msg) #Envíamos el correo electrónico
-  smtpserver.close() #Cerramos la conexión con el SMTP server de Google
+    def enviar_correo_electronico():
+      print("Envíando e-mail")
+      smtpserver = smtplib.SMTP("smtp.gmail.com",587) #Definimos el objeto 'smtpserver' con smptlib.SMTP, SMTP("",) Administra la conexión SMTP
+      smtpserver.ehlo() #Este método prepara envíar un correo electrónico
+      smtpserver.starttls() #Pone la conexión con el servidor SMTP en el modo de TLS.
+      smtpserver.ehlo()
+      smtpserver.login(USUARIO_GMAIL, CONTRASENA_GMAIL) #Iniciamos sesion en el SMTP server de Google
+      header = 'To: ' + DESTINATARIO + '\n' #Construimos el 'HEADER' para envíar el correo electrónico
+      header += 'From: ' + REMITENTE + '\n'
+      header += 'Subject: ' + ASUNTO + '\n'
+      print header
+      msg = header + '\n' + MENSAJE + ' \n\n' #Concatenamos el'HEADER' y el 'MENSAJE' del correo electrónico
+      smtpserver.sendmail(REMITENTE, DESTINATARIO, msg) #Envíamos el correo electrónico
+      smtpserver.close() #Cerramos la conexión con el SMTP server de Google
 
 ### Graficos
 
@@ -125,6 +125,11 @@ def enviar_correo_electronico():
 Instalando la librería matemática MathPlotLib podemos representar datos gráficamente en tiempo real. Más detalles en http://www.blendedtechnologies.com/realtime-plot-of-arduino-serial-data-using-python
 
 El código https://github.com/gregpinero/ArduinoPlot/tree/master  implementa un monitor  https://github.com/gregpinero/ArduinoPlot/blob/master/Arduino_Monitor.py de arduino que permanentemente está recibiendo datos de Arduino via puerto serie (por defecto por el COM4 y a 9600 pero facilmente modificable) y código https://github.com/gregpinero/ArduinoPlot/blob/master/wx_mpl_dynamic_graph.py para ir visualizando los datos a medida que estos llegan
+
+### Guardando datos
+
+
+Un ejemplo para hacerlo [en windows](https://www.instructables.com/id/Using-an-Arduino-and-Python-to-plotsave-data/) y otro [en linux](https://www.instructables.com/id/Sending-Data-From-Arduino-to-Python-Via-USB/)
 
 ### Referencias
 
