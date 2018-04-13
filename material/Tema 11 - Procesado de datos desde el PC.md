@@ -135,6 +135,10 @@ Un ejemplo para hacerlo [en windows](https://www.instructables.com/id/Using-an-A
 
 Podéis aprender mucho más sobre cómo usar Arduino y python en estos tutoriales [Tutorial de python y arduino](http://www.toptechboy.com/using-python-with-arduino-lessons/)
 
+[Tutorial sobre lectura y escritura de datos en python](https://engineersportal.com/blog/2018/2/25/python-datalogger-reading-the-serial-output-from-arduino-to-analyze-data-using-pyserial)
+
+[Curso gratuito de python by Googe](https://developers.google.com/edu/python/)
+
 
 ## Java
 
