@@ -82,7 +82,7 @@ Vamos a ver ahora un ejemplo más complejo
 
 Existen muchas posibilidades de ampliar el uso de los LCD, como por ejemplo utilizando  gráficos de barras con  la librería lcdBarGraph  http://playground.arduino.cc/Code/LcdBarGraph.  Lo que hace es usar caracteres definidos por el usuario con pequeños rectángulos de tamaños progresivos y cuando dibuja una barra, muestra todas los cuadrados enteros y el resto con el carácter correspondiente. Aunque esta librería funciona con la básica LiquidCrystal se puede implementar sin problema en cualquier versión de liquidcrystal.
 
-Algo en lo que también se puede mejorar el aspecto es en trabajar en Menús, dentro de nuestra aplicación.
+Algo en lo que también se puede mejorar el aspecto al trabajar en Menús, dentro de nuestra aplicación.
 
 Veamos las diferentes opciones:
 * Menús en librería serie http://playground.arduino.cc/Code/Menu
