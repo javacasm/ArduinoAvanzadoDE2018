@@ -43,6 +43,41 @@ El uso de la librería I2C es el mismo, solo cambiando el include.
 
 Para empezar a usarla, abrimos el ejemplo de la libreria "LiquidCrystal I2C" HelloWorld , cambiamos la direccion del LCD ( Puede ser 0x27 o 0x30 o 0x3F) (Podemos buscar el valor usando "[I2C Scanner](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/i2c_scanner/i2c_scanner.ino)"), conectamos el LCD y ajustamos el contraste con el potenciómetro de la placa.
 
+Vamos a ver ahora un ejemplo más complejo
+
+    #include <Wire.h>
+    #include <LiquidCrystal_I2C.h>
+
+    // Los usaremos para definir caracteres personalizados
+    uint8_t heart[8] = {0x0,0xa,0x1f,0x1f,0xe,0x4,0x0};
+    uint8_t bell[8]  = {0x4,0xe,0xe,0xe,0x1f,0x0,0x4};
+
+    LiquidCrystal_I2C lcd(0x3F,16,2);  //
+
+    void setup() {
+      lcd.init();
+
+      lcd.backlight();
+      lcd.createChar(0, heart);
+      lcd.createChar(1, bell);
+
+
+      lcd.setCursor(6, 0);  // fila 1, columna 6
+      lcd.write(0);  // Mostramos el caracter personalizado 0
+      lcd.print("Ejemplo 1");
+      lcd.write(0);
+
+      lcd.setCursor(8, 1); // fila 2, columna 8
+      lcd.print("Otro texto");
+      lcd.write(1); // Mostramos el caracter personalizado 1
+    }
+
+    void loop() {
+      lcd.scrollDisplayLeft();  // Movemos hacie la derecha el texto
+      delay(1000);
+    }
+
+
 ### Más sobre LCDs
 
 Existen muchas posibilidades de ampliar el uso de los LCD, como por ejemplo utilizando  gráficos de barras con  la librería lcdBarGraph  http://playground.arduino.cc/Code/LcdBarGraph.  Lo que hace es usar caracteres definidos por el usuario con pequeños rectángulos de tamaños progresivos y cuando dibuja una barra, muestra todas los cuadrados enteros y el resto con el carácter correspondiente. Aunque esta librería funciona con la básica LiquidCrystal se puede implementar sin problema en cualquier versión de liquidcrystal.
