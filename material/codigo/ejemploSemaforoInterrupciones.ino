@@ -1,3 +1,16 @@
+// Curso de Arduino completo
+
+// https://github.com/javacasm/ArduinoCompletoDE2018
+//
+// Licencia Creative Commons 
+// by @javacasm 2018
+
+
+
+// Esto es un semáforo hecho con 3 Leds conectados a las patillas 7, 8 y 9
+//
+// Para hacer el cambio entre estados se usan interrupciones por tiempo
+
 #include <TimerOne.h>
 
 #define ROJO        7
@@ -9,9 +22,6 @@
 #define DURACION_VERDE    10*BASE_TIEMPO
 #define DURACION_AMARILLO 5*BASE_TIEMPO
 
-// Esto es un semáforo hecho con 3 Leds conectados a las patillas 7, 8 y 9
-//
-// Para hacer el cambio entre estados se usan interrupciones por tiempo
 
 void setup() {
   pinMode(ROJO,OUTPUT);
