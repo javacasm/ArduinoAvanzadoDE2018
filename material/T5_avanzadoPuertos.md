@@ -100,7 +100,7 @@ Del mismo modo existe el operador >> que rota en sentido contrario  y que equiva
 
 ![LED_kit_paralelo.png](./images/LED_kit_paralelo.png)
 
-El código sería
+El [código](https://github.com/javacasm/ArduinoCompletoDE2018/blob/master/material/codigo/CylonInterrupcionesHardware.ino) sería
 
         unsigned char upDown=1;  // Indica si vamos hacia arriba o hacia abajo
 
