@@ -66,7 +66,7 @@ La libería nos permite hacer varias cosas (a coste de perder el PWM de los pine
     void detachInterrupt();                 // elilmina la función de disparo
 
 
-Veamos un ejemplo de uso en el que haremos que un led cambie de estado cada segundos
+Veamos un [ejemplo](https://github.com/javacasm/ArduinoCompletoDE2018/blob/master/material/codigo/ejemploInterrupcionesSoftware.ino) de uso en el que haremos que un led cambie de estado cada segundos
 
 
 
@@ -101,7 +101,7 @@ Ahora puedes revisar el ejemplo "Interrupt" de la librería
 
 [Vídeo sobre interrupciones software](https://www.youtube.com/embed/oG73lT56m7A)
 
-Éste otro código implementa un semáforo por medio de interrupciones por software
+Éste [otro código](https://github.com/javacasm/ArduinoCompletoDE2018/blob/master/material/codigo/ejemploSemaforoInterrupciones.ino) implementa un semáforo por medio de interrupciones por software
 
 
         #include <TimerOne.h>
