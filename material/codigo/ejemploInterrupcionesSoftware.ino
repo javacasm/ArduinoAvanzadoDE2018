@@ -1,3 +1,12 @@
+// Curso de Arduino completo
+
+// https://github.com/javacasm/ArduinoCompletoDE2018
+// 
+// Licencia Creative Commons
+// by @javacasm 2018
+
+// Ejemplo de uso de interrupciones software (por tiempo) que hace parpadear un led
+
 #include <TimerOne.h>
 
   #define PIN_LED 13
