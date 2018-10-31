@@ -74,13 +74,13 @@ DDRD es la dirección del Port D (Arduino digital pins 0-7) controla si PORTD se
 
 Si en nuestro código hacemos
 
-  DDRD = B11111110; // 1 to 7 as outputs, pin 0 as input
+    DDRD = B11111110; // 1 to 7 as outputs, pin 0 as input
 
 Estaremos haciendo que los pines 1-7 sean salidas y el 0 entrada
 
 Si ahora hacemos
 
-  PORTD = B10101000; // ponemos los pin 7,5,3 HIGH
+    PORTD = B10101000; // ponemos los pin 7,5,3 HIGH
 
 Estamos poniendo los pines 7,5 y 3 en estado alto
 
@@ -102,28 +102,28 @@ Del mismo modo existe el operador >> que rota en sentido contrario  y que equiva
 
 El código sería
 
-    unsigned char upDown=1;  // Indica si vamos hacia arriba o hacia abajo
+        unsigned char upDown=1;  // Indica si vamos hacia arriba o hacia abajo
 
-    unsigned char cylon=0; // será el led que encendemos de 0 a 4
+        unsigned char cylon=0; // será el led que encendemos de 0 a 4
 
-    void setup() {
-        DDRB = B00011111; // Arduino port B pines 0 to 4 como salida
-    }
-
-    void loop() {
-      if ( upDown == 1 ) { // Vamos hacia arriba
-        cylon++;  // Pasamos al siguiente
-        if(cylon>=4) {  // Si llegamos a 4 tenemos que empezar a ir hacia abajo
-            upDown=0;
-        }
-      } else {
-        cylon--;  // Vamos hacia abajo
-        if ( cylon == 0 ) {  // Si llevamos abajo (0) empezamos a subir
-          upDown=1;
+        void setup() {
+            DDRB = B00011111; // Arduino port B pines 0 to 4 como salida
         }
 
-      }
-      PORTB = 1 << cylon; // Rotamos a la derecha determinado numero de veces el led
-      delay(150); // Esperamos un poquito
+        void loop() {
+          if ( upDown == 1 ) { // Vamos hacia arriba
+            cylon++;  // Pasamos al siguiente
+            if(cylon>=4) {  // Si llegamos a 4 tenemos que empezar a ir hacia abajo
+                upDown=0;
+            }
+          } else {
+            cylon--;  // Vamos hacia abajo
+            if ( cylon == 0 ) {  // Si llevamos abajo (0) empezamos a subir
+              upDown=1;
+            }
 
-    }
+          }
+          PORTB = 1 << cylon; // Rotamos a la derecha determinado numero de veces el led
+          delay(150); // Esperamos un poquito
+
+        }
