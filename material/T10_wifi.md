@@ -261,4 +261,4 @@ Una de las mas usadas ha sido el [Arduino Wifi Shield](https://www.arduino.cc/en
 
 Que tiene la ventana de incluir un lector de tarjetas SD
 
-La arduino UNO Wifi me ha parecido una placa muy interesante, con buenas prestaciones, un precio muy ajustado y que facilita totalmente acceso wifi, no obstante vamos a ver otra forma de proporcionar conectividad wifi más sencilla y barata
+La arduino UNO Wifi me ha parecido una placa muy interesante, con buenas prestaciones, un precio muy ajustado y que facilita totalmente acceso wifi, no obstante vamos a ver otra forma de proporcionar conectividad wifi más sencilla y barata     
